@@ -4,10 +4,8 @@ class Color extends React.Component {
       backgroundColor: this.props.hexCode
     };
     return (
-      <div className="color"
-        onLoad={this.props.update.bind(this, this.props.index)}
-        style={style}>
-        <p className="color__code">{this.props.hexCode}</p>
+    <div className="color" onLoad={this.props.update.bind(this, this.props.index)} style={style}>
+    <p className="color__code">{this.props.hexCode}</p>
       </div>
     );
   }
